@@ -1,0 +1,106 @@
+/**
+* Global variabls contain information
+* related styling of the application
+*/
+
+// leinary colors
+$indigo: #223843;
+$lava: #D1102D;
+$tigerseye: #D8973C;
+$metallicseaweed: #087E8B;
+$orangesoca: #F85A3E;
+$bottlegreen: #0B6E4F;
+
+// Neutral colors
+$lightest: #FCFCFC;
+$light: #EEEEEE;
+$semi-light: #C3C7C9;
+$grey: #697479;
+$darkgrey: #4A585E;
+
+// Color variable alias
+$ln-color-pri: $indigo;
+$ln-color-sec: $lava;
+$ln-color-aux-1: $tigerseye;
+$ln-color-aux-2: $metallicseaweed;
+$ln-color-aux-3: $orangesoca;
+$ln-color-aux-4: $bottlegreen;
+
+// Background color variable alias
+$ln-color-bg-light: $lightest;
+$ln-color-bg-light-alt: $light;
+$ln-color-bg-dark-alt: $grey;
+$ln-color-bg-dark: $darkgrey;
+
+// Font color variable alias
+$ln-color-txt-light: $lightest;
+$ln-color-txt-dark: $darkgrey;
+
+// Status and Alert Variable Alias
+$ln-confirm: #084887;
+$ln-success: #56BF00;
+$ln-caution: #FFCC42;
+$ln-warning: #D33115;
+
+// Button and Alert Colors
+$ln-btn-colors: (
+  "confirm": $ln-confirm,
+  "success": $ln-success,
+  "caution": $ln-caution,
+  "warning": $ln-warning,
+  "primary": $ln-color-pri,
+  "disabled": $ln-color-bg-dark-alt
+);
+
+// Leinary Fonts
+$ln-font-pri: 'Muli', sans-serif;
+$ln-font-alt: 'Amiri', serif;
+
+$ln-line-height-base: 140%;
+$ln-line-height-cont: 180%;
+
+$ln-font-base-size: 16px;
+
+$ln-font-tny: .75rem;
+$ln-font-sml: .875rem;
+$ln-font-med: 1rem;
+$ln-font-lrg: 1.125rem;
+
+$ln-font-heading-sml: 1.375rem;
+$ln-font-heading-med: 1.625rem;
+$ln-font-heading-lrg: 1.75rem;
+
+$ln-font-weight-1: 300;
+$ln-font-weight-2: 400;
+$ln-font-weight-3: 700;
+
+//leinary major break points
+$ln-bp-sml: 575px;
+$ln-bp-med: 760px;
+$ln-bp-lrg: 1024px;
+
+$ln-break-points: (
+  "sml": $ln-bp-sml,
+  "med": $ln-bp-med,
+  "lrg": $ln-bp-med
+);
+
+// Spacing
+$ln-spacing-1: .5rem;
+$ln-spacing-2: 1rem;
+$ln-spacing-3: 1.5rem;
+
+// Z-index
+$ln-z-floor: 0;
+$ln-z-float: 10;
+$ln-z-hover: 20;
+$ln-z-alert: 80; 
+$ln-z-ceiling: 100;
+
+// Box-Shadow
+$ln-bs-1: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+$ln-bs-2: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+$ln-bs-3: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+
+// Grid 
+$ln-grid-columns: 12;

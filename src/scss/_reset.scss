@@ -1,0 +1,15 @@
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background-color: $ln-color-bg-light;
+	font-family: $ln-font-pri;
+	font-size: $ln-font-base-size;
+	line-height: $ln-line-height-base;
+}
+

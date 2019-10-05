@@ -1,0 +1,32 @@
+.ln-bar-chart {
+  position: relative;
+  padding: 0 $ln-spacing-3;
+}
+
+.ln-bar-chart__xlabel {
+  position: absolute;
+  left: -3rem;
+  top: 50%;
+  transform: translateY(-50%);
+  transform: rotate(-90deg);
+}
+
+.ln-bar-chart__bar-container {
+  display: grid;
+  min-height: 200px;
+  grid-auto-flow: column;
+  justify-content: space-evenly;
+  background-color: $ln-color-bg-light-alt;
+  transform: rotate(180deg);
+}
+
+.ln-bar-chart__bar {
+  position: relative;
+  min-width: 30px;
+}
+
+.ln-bar-chart__bar-label {
+  position: absolute;
+  transform: rotate(135deg);
+  top: -2rem;
+}

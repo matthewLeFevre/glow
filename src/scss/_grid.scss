@@ -1,0 +1,28 @@
+@mixin grid-builder($columns: $ln-grid-columns, $useingGap: false, $gapSize: $ln-spacing-2) {
+  display: grid;
+  grid-template-columns: repeat($columns, 1fr);
+  grid-auto-rows: minmax(0px, auto);
+  @if $useingGap {
+    grid-gap: $gapSize;
+  }
+
+  & > .col {
+    @for $column from 1 through $columns {
+      &--#{$column} {
+        grid-column: span $column;
+      }
+    }
+
+    @each $size, $value in $ln-break-points {
+      &--#{$size} {
+        @include bp($value) {
+          @for $column from 1 through $columns {
+            &--#{$column} {
+              grid-column: span $column;
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,64 @@
+// btn variables
+
+$btn-font: '';
+$btn-font-size: 16px;
+$btn-font-color: black;
+$btn-border-radius: 0;
+$btn-padding: .5rem 1rem;
+$btn-margin: 0;
+
+$btn-sizes: (
+  "sml": 12px,
+	"med": 16px,
+	"lrg": 20px
+);
+
+$btn-colors: (
+	'confirm': lightblue,
+	'default': lightgrey,
+	'caution': lightyellow,
+	'warning': orange,
+	'success': lightgreen,
+	'danger': red
+);
+
+@function set-text-color($color) {
+  @if (lightness($color) > 50) {
+    @return #000000; // Lighter backgorund, return dark color
+  } @else {
+    @return #ffffff; // Darker background, return light color
+  }
+}
+
+$btn-types: 'round' 'fluid';
+
+@mixin btn-builder() {
+	// display
+	display: inline;
+	// height width margin padding
+	padding: $ln-spacing-1 $ln-spacing-3;
+	margin: 0;
+	// border background color
+	border: none;
+	border-radius: none;
+	// font text
+	text-align: center;
+	text-decoration: none;
+	font-weight: $ln-font-weight-3;
+	// other
+	cursor: pointer;
+
+	&:not(:first-child) {
+		margin-left: $ln-spacing-1;
+	}
+}
+
+.btn {
+	@each $action, $value in $ln-btn-colors {
+		&--#{$action} {
+			@include btn-builder();
+			background-color: $value;
+			color: set-text-color($value);
+		}
+	}
+}
