@@ -1,0 +1,69 @@
+.ln-h1 {
+  font-size: $ln-font-heading-lrg;
+  color: $ln-darkgrey;
+  margin-top: $ln-spacing-3;
+  &:first-child {
+    margin-top: 0;
+  }
+}
+.ln-h1--sub {
+  font-size: $ln-font-heading-sml;
+  color: $ln-grey;
+  margin-top: $ln-spacing-1;
+}
+
+.ln-h2 {
+  font-size: $ln-font-heading-med;
+  color: $ln-darkgrey;
+  margin-top: $ln-spacing-3;
+  &:first-child {
+    margin-top: 0;
+  }
+}
+.ln-h2--sub {
+  font-size: $ln-font-lrg;
+  color: $ln-grey;
+  margin-top: $ln-spacing-1;
+}
+
+.ln-h3 {
+  font-size: $ln-font-heading-sml;
+  color: $ln-darkgrey;
+  margin-top: $ln-spacing-3;
+  &:first-child {
+    margin-top: 0;
+  }
+}
+
+.ln-h3--sub {
+  font-size: $ln-font-med;
+  color: $ln-grey;
+  margin-top: $ln-spacing-1;
+}
+
+.ln-h4 {
+  font-size: $ln-font-lrg;
+  color: $ln-darkgrey;
+  margin-top: $ln-spacing-2;
+  &:first-child {
+    margin-top: 0;
+  }
+}
+
+.ln-h5 {
+  font-size: $ln-font-lrg;
+  color: $ln-grey;
+  margin-top: $ln-spacing-2;
+  &:first-child {
+    margin-top: 0;
+  }
+}
+
+.ln-h6 {
+  font-size: $ln-font-med;
+  color: $ln-darkgrey;
+  margin-top: $ln-spacing-2;
+  &:first-child {
+    margin-top: 0;
+  }
+}

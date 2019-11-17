@@ -1,0 +1,41 @@
+@mixin notification-builder () {
+  min-height: 50px;
+  @include flex(row, nowrap, space-between, center);
+  padding: $ln-spacing-1;
+  width: 100%;
+  max-width: 500px;
+  box-shadow: $ln-bs-2;
+  &:not(:last-of-type) {
+    margin-bottom: $ln-spacing-1;;
+  }
+}
+
+.ln-notification-container {
+  position: absolute;
+  z-index: $ln-z-alert;
+  top: 45px;
+  right: 0;
+  padding: 0 $ln-spacing-2;
+  width: 100%;
+  max-width: 500px;
+}
+.ln-notification {
+  @each $action, $value in $ln-btn-colors {
+    &--#{$action} {
+      @include notification-builder;
+      border-left: 10px solid nth($value, 1);
+      background-color: nth($value, 4);
+      color: set-text-color(nth($value, 4));
+    }
+  }
+ }
+.ln-notification__message {}
+.ln-notification__close {
+  @include flex(row, nowrap, center, center);
+  cursor: pointer;
+  min-height: 40px;
+  min-width: 40px;
+  font-size: 20px;
+  background-color: transparent;
+  border: none;
+}

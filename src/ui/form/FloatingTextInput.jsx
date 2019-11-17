@@ -1,11 +1,12 @@
 import React from 'react';
+import FormField from './FormField';
 
-function FloatingTextInput({label, callback, required, type}) {
+function FloatingTextInput({label, callback, required = false, type, className}) {
   return (
-    <div className="ln-field">
-      <input required={required || false} required={true} type={type || 'text'} className="ln-input--floating full"/>
+    <FormField className={className}>
+      <input required={required} type={type || 'text'} className="ln-input--floating full"/>
       <label className="ln-label--floating">{label}</label>
-    </div>
+    </FormField>
   );
 }
 

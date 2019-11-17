@@ -49,106 +49,16 @@
   max-height: calc(100vh - 50px);
 }
 
-.ln-form {
+.ln-block--fragment {
   padding: $ln-spacing-2;
-  box-shadow: $ln-bs-1;
 }
-.ln-form__head {
-  margin-bottom: $ln-spacing-3;
-}
-.ln-form__title {}
-.ln-field {
-  position: relative;
-  margin: $ln-spacing-2 0;
-  padding: $ln-spacing-1 0;
-}
-.ln-label {
-  display: block;
-  margin: $ln-spacing-1 0;
-  font-size: $ln-font-med;
-  font-weight: $ln-font-weight-3;
-}
-.ln-input {
-  cursor: pointer;
-  display: block;
-  padding: $ln-spacing-1;
-  border: none;
-  border-bottom: 2px solid $ln-color-bg-dark;
-  &:focus {
-    outline: none;
-    // background-color: $ln-color-bg-light-alt;
-  }
-  &.full {
-    width: 100%;
-  }
-}
-.ln-label--floating {
-  @include transition;
-  position: absolute;
-  display: block;
-  margin: $ln-spacing-1 0;
-  font-weight: $ln-font-weight-3;
-  bottom: .5rem;
-  left: .5rem;
-  color: $ln-color-bg-dark-alt;
-}
-.ln-input--floating {
-  position: relative;
-  z-index: $ln-z-float;
-  display: block;
-  padding: $ln-spacing-1;
-  border: none;
-  border-bottom: 2px solid $ln-color-bg-dark-alt;
-  background-color: transparent;
-  &:focus {
-    outline: none;
-    border-color: $ln-confirm;
-    // background-color: $ln-color-bg-light-alt;
-  }
-  &.full {
-    width: 100%;
-  }
-  &:focus + .ln-label--floating {
-    bottom: 2rem;
-    color: $ln-confirm;
-    font-size: $ln-font-tny;
-  }
-  &:valid + .ln-label--floating {
-    bottom: 2rem;
-    color: $ln-confirm;
-    font-size: $ln-font-tny;
-  }
-  &:focus:invalid + .ln-label--floating {
-    color: $ln-warning;
-  }
-}
+
 
 .ln-item-container {
   padding: $ln-spacing-1;
   @include flex(row, wrap, center, flex-start);
   @include bp($ln-bp-med) {
     @include flex(row, wrap);
-  }
-}
-
-@mixin card($num) {
-
-}
-
-.ln-card {
-  box-shadow: $ln-bs-1;
-  width: 100%;
-  max-width: 275px;
-  margin: $ln-spacing-1;
-  height: 400px;
-  @include bp($ln-bp-sml) {
-    width: calc(100% / 2 - 1rem);
-  }
-  @include bp($ln-bp-med) {
-    width: calc(100% / 3 - 1rem);
-  }
-  @include bp($ln-bp-lrg) {
-    width: calc(100% / 4 - 1rem);
   }
 }
 

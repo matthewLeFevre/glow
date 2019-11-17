@@ -31,9 +31,9 @@
 
 @function set-text-color($color) {
     @if lightness($color) > 60 {
-        @return $thm-black;
+        @return $ln-darkgrey;
     } @else {
-        @return $thm-white;
+        @return $ln-white;
     }
 }
 

@@ -33,32 +33,37 @@ $btn-colors: (
 $btn-types: 'round' 'fluid';
 
 @mixin btn-builder() {
-	// display
 	display: inline;
-	// height width margin padding
 	padding: $ln-spacing-1 $ln-spacing-3;
 	margin: 0;
-	// border background color
 	border: none;
 	border-radius: none;
-	// font text
 	text-align: center;
 	text-decoration: none;
 	font-weight: $ln-font-weight-3;
-	// other
+	box-shadow: $ln-bs-1;
 	cursor: pointer;
 
-	&:not(:first-child) {
+	&:hover {
+		box-shadow: $ln-bs-2;
+	}
+
+	&:not(:first-of-type) {
 		margin-left: $ln-spacing-1;
 	}
 }
 
-.btn {
+.ln-btn {
 	@each $action, $value in $ln-btn-colors {
 		&--#{$action} {
-			@include btn-builder();
-			background-color: $value;
-			color: set-text-color($value);
+			@include btn-builder;
+			@include transition;
+			background-color: nth($value, 1);
+			color: set-text-color(nth($value, 1));
+			&:hover {
+				background-color: nth($value, 2);
+				color: set-text-color(nth($value, 2));
+			}
 		}
 	}
 }

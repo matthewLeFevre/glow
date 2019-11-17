@@ -1,0 +1,67 @@
+.ln-modal__shadow {
+  @include flex(row, nowrap, center, center);
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba($ln-color-pri, .8);
+  z-index: $ln-z-hover; 
+}
+.ln-modal {
+  width: 90vw;
+  background-color: $ln-white;
+  max-width: 500px;
+  box-shadow: $ln-bs-2;
+}
+.ln-modal-header {
+  @include flex(row, nowrap, space-between, center);
+  background-color: $ln-color-pri;
+  color: $ln-lightestgrey;
+  padding: $ln-spacing-1;
+}
+.ln-modal-header__title {
+  font-size: $ln-font-lrg;
+}
+.ln-modal-header__close {
+  @include flex(row, nowrap, center, center);
+  @include transition;
+  height: 30px;
+  width: 30px;
+  background-color: transparent;
+  border: none;
+  color: $ln-lightestgrey;
+  font-size: $ln-font-lrg;
+  cursor: pointer;
+  &:hover {
+    background-color: $ln-darkgrey;
+  }
+}
+.ln-modal-body {
+  padding: $ln-spacing-1;
+}
+.ln-modal-upload {
+  padding: $ln-spacing-2;
+}
+.ln-modal-upload__form {
+  @include flex(row, nowrap, center, center);
+  @include transition;
+  border: 2px dashed $ln-grey;
+  height: 125px;
+  width: 125px;
+  text-align: center;
+  color: $ln-grey;
+  &:hover {
+    background-color: $ln-lightestgrey;
+  }
+}
+.ln-modal-upload__icon {
+  font-size: 40px;
+}
+.ln-modal-upload__button {
+  display: block;
+  padding: $ln-spacing-1;
+  height: 100%;
+  width: 100%;
+  cursor: pointer;
+}

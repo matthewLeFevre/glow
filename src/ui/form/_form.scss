@@ -1,0 +1,81 @@
+
+.ln-form {
+  padding: 0 $ln-spacing-2;
+}
+
+.ln-form--grid {
+  @extend .ln-form;
+  @include grid-builder(12, true);
+}
+.ln-form__head {
+  margin-bottom: $ln-spacing-3;
+}
+.ln-form__title {}
+.ln-field {
+  position: relative;
+  margin: $ln-spacing-2 0;
+  padding: $ln-spacing-1 0;
+}
+.ln-label {
+  display: block;
+  margin: $ln-spacing-1 0;
+  font-size: $ln-font-med;
+  font-weight: $ln-font-weight-3;
+}
+.ln-input {
+  cursor: pointer;
+  display: block;
+  padding: $ln-spacing-1;
+  border: none;
+  border-bottom: 2px solid $ln-color-bg-dark;
+  &:focus {
+    outline: none;
+    // background-color: $ln-color-bg-light-alt;
+  }
+  &.full {
+    width: 100%;
+  }
+}
+.ln-input--file {
+  display: none;
+}
+.ln-label--floating {
+  @include transition;
+  position: absolute;
+  display: block;
+  margin: $ln-spacing-1 0;
+  font-weight: $ln-font-weight-3;
+  bottom: .5rem;
+  left: 0;
+  color: $ln-color-bg-dark-alt;
+}
+.ln-input--floating {
+  position: relative;
+  z-index: $ln-z-float;
+  display: block;
+  padding: $ln-spacing-1;
+  border: none;
+  border-bottom: 2px solid $ln-color-bg-dark-alt;
+  background-color: transparent;
+  &:focus {
+    outline: none;
+    border-color: $ln-confirm;
+    // background-color: $ln-color-bg-light-alt;
+  }
+  &.full {
+    width: 100%;
+  }
+  &:focus + .ln-label--floating {
+    bottom: 2rem;
+    color: $ln-confirm;
+    font-size: $ln-font-tny;
+  }
+  &:valid + .ln-label--floating {
+    bottom: 2rem;
+    color: $ln-confirm;
+    font-size: $ln-font-tny;
+  }
+  &:focus:invalid + .ln-label--floating {
+    color: $ln-warning;
+  }
+}

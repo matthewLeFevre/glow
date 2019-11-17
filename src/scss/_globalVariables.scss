@@ -4,14 +4,40 @@
 */
 
 // leinary colors
+
+// Indigo
 $indigo: #223843;
+$indigo-varients: #223843 #475C67 #7D8C94 #A9B3B7;
+
+// Lava
 $lava: #D1102D;
+$lava-varients: #D1102D #DA4057 #E37081 #ED9FAB;
+
+// tigerseye
 $tigerseye: #D8973C;
+$tigerseye-varients: #D8973C #E0AC63 #E8C18A #EFD5B1;
+
+// metallicseaweed
 $metallicseaweed: #087E8B;
+$metallicseaweed-varients: #087E8B #3998A2 #6BB2B9 #9CCBD1;
+
+//orangesoca
 $orangesoca: #F85A3E;
+$orangesoca-varients: #F85A3E #F97B65 #FB9C8B #FCBDB2;
+
+//bottlegreen
 $bottlegreen: #0B6E4F;
+$bottlegreen-varients: #0B6E4F #3C8B72 #6DA895 #9DC5B9;
 
 // Neutral colors
+$greyscale: #4A585E #6E797E #929B9E #B7BCBF #DBDEDF #FCFCFC;
+$ln-darkgrey: nth($greyscale, 1); // Primary headers, body text
+$ln-grey: nth($greyscale, 2); // Secondary Headers, Supporting Text
+$ln-lightgrey: nth($greyscale, 3); // Border Lines, Disabled Buttons
+$ln-brightgrey: nth($greyscale, 4); // Backgrounds
+$ln-lightestgrey: nth($greyscale, 5); // Backgrounds
+$ln-white: nth($greyscale, 6); // Backgrounds, Light Body Text
+
 $lightest: #FCFCFC;
 $light: #EEEEEE;
 $semi-light: #C3C7C9;
@@ -38,18 +64,21 @@ $ln-color-txt-dark: $darkgrey;
 
 // Status and Alert Variable Alias
 $ln-confirm: #084887;
-$ln-success: #56BF00;
+$ln-confirm-varients: #084887 #396D9F #6B91B7 #9CB6CF;
+$ln-success: #5BBA6F;
+$ln-success-varients: #5BBA6F #7CC88C #9DD6A9 #BDE3C5;
 $ln-caution: #FFCC42;
-$ln-warning: #D33115;
+$ln-caution-varients: #FFCC42 #FFD668 #FFE08E #FFEBB3;
+$ln-warning: #B0413E;
+$ln-warning-varients: #B0413E #C06765 #D08D8B #DFB3B2;
 
 // Button and Alert Colors
 $ln-btn-colors: (
-  "confirm": $ln-confirm,
-  "success": $ln-success,
-  "caution": $ln-caution,
-  "warning": $ln-warning,
-  "primary": $ln-color-pri,
-  "disabled": $ln-color-bg-dark-alt
+  "confirm": $ln-confirm-varients,
+  "success": $ln-success-varients,
+  "caution": $ln-caution-varients,
+  "warning": $ln-warning-varients,
+  "primary": $indigo-varients
 );
 
 // Leinary Fonts
@@ -93,7 +122,7 @@ $ln-spacing-3: 1.5rem;
 // Z-index
 $ln-z-floor: 0;
 $ln-z-float: 10;
-$ln-z-hover: 20;
+$ln-z-hover: 20; // modal
 $ln-z-alert: 80; 
 $ln-z-ceiling: 100;
 
@@ -104,3 +133,8 @@ $ln-bs-3: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
 
 // Grid 
 $ln-grid-columns: 12;
+
+// Border Radius
+$ln-br-1: 2px;
+$ln-br-2: 5px;
+$ln-br-3: 7px;
