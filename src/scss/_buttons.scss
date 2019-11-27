@@ -4,7 +4,8 @@ $btn-font: '';
 $btn-font-size: 16px;
 $btn-font-color: black;
 $btn-border-radius: 0;
-$btn-padding: .5rem 1rem;
+// $btn-padding: .5rem 1rem;
+$btn-padding: 10px 20px;
 $btn-margin: 0;
 
 $btn-sizes: (
@@ -13,28 +14,11 @@ $btn-sizes: (
 	"lrg": 20px
 );
 
-$btn-colors: (
-	'confirm': lightblue,
-	'default': lightgrey,
-	'caution': lightyellow,
-	'warning': orange,
-	'success': lightgreen,
-	'danger': red
-);
-
-@function set-text-color($color) {
-  @if (lightness($color) > 50) {
-    @return #000000; // Lighter backgorund, return dark color
-  } @else {
-    @return #ffffff; // Darker background, return light color
-  }
-}
-
 $btn-types: 'round' 'fluid';
 
 @mixin btn-builder() {
 	display: inline;
-	padding: $ln-spacing-1 $ln-spacing-3;
+	padding: $btn-padding;
 	margin: 0;
 	border: none;
 	border-radius: none;

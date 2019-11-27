@@ -1,0 +1,40 @@
+$ln-animation-duration: .2s;
+
+@each $color, $hex in $ln-colors {
+  .ln-bg--#{$color} {
+    background-color: $hex !important;
+  }
+
+  .ln-txt--#{$color} {
+    color: $hex !important;
+  }
+
+  .ln-bt--#{$color} {
+    @include transition(
+      background-color, 
+      $ln-animation-duration
+    );
+    background-color: $hex !important;
+    color: set-text-color($hex) !important;
+    &:hover {
+      background-color: darken($hex, 10%) !important;
+    }
+  }
+}
+
+.hide {
+  display: none !important;
+}
+@each $breakpoint, $value in $ln-break-points {
+  .show-at-#{$breakpoint} {
+    @include bp($value) {
+      display: block !important;
+    }
+  }
+
+  .hide-at-#{$breakpoint} {
+    @include bp($value) {
+      display: none !important;
+    }
+  }
+}

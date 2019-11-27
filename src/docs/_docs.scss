@@ -1,0 +1,18 @@
+.ln-display-case {
+  padding: $ln-spacing-2;
+  margin-top: $ln-spacing-3;
+  min-height: 60px;
+  border-radius: $ln-br-1;
+  background-color: $lightest;
+  border: 2px solid $semi-light;
+}
+
+.ln-display-case__section {
+  margin-top: $ln-spacing-2;
+  &:only-child {
+    margin-top: 0;
+  }
+  &:first-child {
+    margin-top: 0;
+  }
+}

@@ -72,6 +72,11 @@ $ln-caution-varients: #FFCC42 #FFD668 #FFE08E #FFEBB3;
 $ln-warning: #B0413E;
 $ln-warning-varients: #B0413E #C06765 #D08D8B #DFB3B2;
 
+$ln-colors: (
+  "indigo": $ln-color-pri,
+  "lava": $ln-color-sec
+  );
+
 // Button and Alert Colors
 $ln-btn-colors: (
   "confirm": $ln-confirm-varients,
