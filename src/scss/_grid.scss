@@ -26,3 +26,14 @@
     }
   }
 }
+
+.ln-grid {
+  @include grid-builder();
+}
+
+.ln-grid--gap {
+  @include grid-builder(12, true, $ln-spacing-1);
+  & > * {
+    height: 40px;
+  }
+}

@@ -1,25 +1,10 @@
 // btn variables
-
-$btn-font: '';
-$btn-font-size: 16px;
-$btn-font-color: black;
-$btn-border-radius: 0;
-// $btn-padding: .5rem 1rem;
 $btn-padding: 10px 20px;
-$btn-margin: 0;
-
-$btn-sizes: (
-  "sml": 12px,
-	"med": 16px,
-	"lrg": 20px
-);
-
-$btn-types: 'round' 'fluid';
 
 @mixin btn-builder() {
 	display: inline;
 	padding: $btn-padding;
-	margin: 0;
+	margin:  0 0 $ln-spacing-1 0;
 	border: none;
 	border-radius: none;
 	text-align: center;
@@ -32,8 +17,8 @@ $btn-types: 'round' 'fluid';
 		box-shadow: $ln-bs-2;
 	}
 
-	&:not(:first-of-type) {
-		margin-left: $ln-spacing-1;
+	&:not(:last-of-type) {
+		margin-right: $ln-spacing-1;
 	}
 }
 
@@ -45,6 +30,10 @@ $btn-types: 'round' 'fluid';
 			background-color: nth($value, 1);
 			color: set-text-color(nth($value, 1));
 			&:hover {
+				background-color: nth($value, 2);
+				color: set-text-color(nth($value, 2));
+			}
+			&.active {
 				background-color: nth($value, 2);
 				color: set-text-color(nth($value, 2));
 			}

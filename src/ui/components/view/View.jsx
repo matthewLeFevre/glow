@@ -1,25 +1,25 @@
 import React, { useState, useEffect } from "react";
-import CheckBoxInput from "../form/CheckBoxInput";
-import TextInput from "../form/TextInput";
-import SelectInput from "../form/SelectInput";
-import FloatingTextInput from "../form/FloatingTextInput";
-import Card from "../card/Card";
-import FormField from "../form/FormField";
+import CheckBoxInput from "../components/form/CheckBoxInput";
+import TextInput from "../components/form/TextInput";
+import SelectInput from "../components/form/SelectInput";
+import FloatingTextInput from "../components/form/FloatingTextInput";
+import Card from "../components/card/Card";
+import FormField from "../components/form/FormField";
 import BarChart, { Bar } from "../charts/BarChart";
-import { NotificationContainer } from "../notification/Notification";
+import { NotificationContainer } from "../components/notification/Notification";
 import Sidebar from "../sidebar/Sidebar";
-import Form from "../form/Form";
+import Form from "../components/form/Form";
 import Modal, {
   ModalHeader,
   ModalFooter,
   ModalBody,
   ModalUpload
-} from "../modal/Modal";
-import LandingView from "../containers/LandingView";
-import BannerSection from "../containers/BannerSection";
+} from "../components/modal/Modal";
+import LandingView from "../components/containers/LandingView";
+import BannerSection from "../components/containers/BannerSection";
 // import { H1 } from '../heading/PrimaryHeading';
-import ContentView from "../containers/ContentView";
-import ConsoleView from "../containers/ConsoleView";
+import ContentView from "../components/containers/ContentView";
+import ConsoleView from "../components/containers/ConsoleView";
 
 function View() {
   const [nots, setNots] = useState([

@@ -2,20 +2,23 @@
 @import './scss/reset';
 @import './scss/functions';
 @import './scss/grid';
-@import './scss/buttons';
+@import './ui/components/buttons/buttons';
 @import './scss/utilities';
 
-@import './ui/header/header';
-@import './ui/view/view';
+@import './ui/components/header/header';
+@import './ui/components/view/view';
 @import './ui/charts/barChart';
 
 @import './scss/color';
 
-@import './ui/notification/notification';
-@import './ui/form/form';
-@import './ui/card/card';
-@import './ui/modal/modal';
-@import './ui/heading/headings';
-@import './ui/bodyText/bodyText';
+@import './ui/components/notification/notification';
+@import './ui/components/form/form';
+@import './ui/components/card/card';
+@import './ui/components/modal/modal';
+@import './ui/components/titles/titles';
+@import './ui/components/bodyText/bodyText';
+@import './ui/components/tabSection/tabSection';
 
 @import './docs/docs';
+@import './docs/components/propsTable';
+@import './docs/components/codeSection';

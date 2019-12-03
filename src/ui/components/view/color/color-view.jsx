@@ -1,11 +1,11 @@
-import React, {useState} from 'react';
-import { NotificationContainer } from '../../notification/Notification';
-import FormField from '../../form/FormField';
-import TextInput from '../../form/TextInput';
-import Card from '../../card/Card';
- 
+import React, { useState } from "react";
+import { NotificationContainer } from "../../components/notification/Notification";
+import FormField from "../../components/form/FormField";
+import TextInput from "../../components/form/TextInput";
+import Card from "../../components/card/Card";
+
 function ColorView() {
-  return(
+  return (
     <main className="ln-view--console">
       <section className="ln-container col--12">
         <h1>Form</h1>

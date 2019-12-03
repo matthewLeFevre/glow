@@ -1,0 +1,16 @@
+.ln-tab-section {
+
+}
+.ln-tab-section__tabs {
+  
+}
+.ln-tab-section__tab {
+  display: inline-block;
+  padding: 10px 20px;
+  margin-right: 3px;
+  border: 2px solid $ln-lightgrey;
+  border-bottom: none;
+  background-color: $ln-white;
+  cursor: pointer;
+}
+.ln-tab-section__body {}

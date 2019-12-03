@@ -1,0 +1,30 @@
+.ln-props-table {
+  margin-top: $ln-spacing-3;
+  border-collapse: collapse;
+  width: 100%;
+  text-align: left;
+
+  & td {
+    border: 1px solid $ln-lightgrey;
+    padding: $ln-spacing-1;
+  }
+  
+  & th {
+    border: 1px solid $ln-grey;
+    padding: $ln-spacing-1;
+    background-color: $ln-grey;
+    color: $ln-color-txt-light;
+    font-size: $ln-font-lrg;
+  }
+}
+
+.ln-props-table__name {
+  font-weight: $ln-font-weight-3;;
+}
+.ln-props-table__type {
+  padding: 2px 6px;
+  background-color: $ln-lightestgrey;
+  display: inline-block;
+  font-size: $ln-font-sml;
+  font-family: monospace;
+}
