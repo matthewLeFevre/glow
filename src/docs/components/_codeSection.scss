@@ -1,4 +1,9 @@
 .ln-doc-code {
   max-height: 300px;
   overflow: auto;
+  font-weight: $ln-font-weight-2;
+  box-shadow: $ln-bs-1;
+  & > code.hljs {
+    background-color: $ln-lightestgrey;
+  }
 }

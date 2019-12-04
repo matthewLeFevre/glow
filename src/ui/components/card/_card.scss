@@ -9,21 +9,10 @@
   min-width: 275px;
   max-width: 275px;
   margin: $ln-spacing-1;
-  // min-height: 300px;
-  // max-height: 350px;
-  // @include bp($ln-bp-sml) {
-  //   width: calc(100% / 2 - 1rem);
-  // }
-  // @include bp($ln-bp-med) {
-  //   width: calc(100% / 3 - 1rem);
-  // }
-  // @include bp($ln-bp-lrg) {
-  //   width: calc(100% / 4 - 1rem);
-  // }
 }
 
 .ln-card__head {
-  @include flex(row, nowrap, space-between, center);
+  @include flex(row-reverse, nowrap, space-between, center);
   padding: $ln-spacing-1;
   background-color: $ln-color-pri;
   color: $ln-white;

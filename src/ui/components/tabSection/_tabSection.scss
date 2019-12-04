@@ -2,15 +2,28 @@
 
 }
 .ln-tab-section__tabs {
-  
+  // border-bottom: 2px solid $ln-grey;
+  // padding-left: $ln-spacing-1;
 }
 .ln-tab-section__tab {
+  position: relative;
+  top: 1px;
   display: inline-block;
   padding: 10px 20px;
   margin-right: 3px;
-  border: 2px solid $ln-lightgrey;
-  border-bottom: none;
-  background-color: $ln-white;
+  border: 1px solid $ln-grey;
+  background-color: $ln-lightgrey;
+  color: $ln-white;
+  font-weight: $ln-font-weight-3;
+  border-radius: $ln-br-1 $ln-br-1 0 0;
   cursor: pointer;
+
+  &.active {
+    background-color: $ln-lightestgrey;
+    color: $ln-darkgrey;
+    border-bottom-color: $ln-lightestgrey;
+  }
 }
-.ln-tab-section__body {}
+.ln-tab-section__body {
+  border: 1px solid $ln-grey;
+}

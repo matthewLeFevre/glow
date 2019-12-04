@@ -68,8 +68,9 @@ export default function ButtonView() {
     <>
       <Title1>Button</Title1>
       <Paragraph>
-        Welcome to the glow library documentation. Components are outlined with
-        thier usage.
+        Buttons are the simplest and most popular component to implement. There
+        are a few specific props that can be supplied to customize the purpose
+        of the component.
       </Paragraph>
       <DisplayCase>
         <DisplaySection>
@@ -81,11 +82,6 @@ export default function ButtonView() {
         </DisplaySection>
       </DisplayCase>
       <CodeSection jsx={jsxCode} scss={scssCode} />
-      <Paragraph>
-        Buttons are the simplest and most popular component to implement. There
-        are a few specific props that can be supplied to customize the purpose
-        of the component.
-      </Paragraph>
       <PropsTable compProps={compProps} />
     </>
   );
