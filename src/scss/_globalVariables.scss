@@ -128,9 +128,9 @@ $ln-spacing-3: 1.5rem;
 
 // Z-index
 $ln-z-floor: 0;
-$ln-z-float: 10;
+$ln-z-float: 10; // header
 $ln-z-hover: 20; // modal
-$ln-z-alert: 80; 
+$ln-z-alert: 80; // notification
 $ln-z-ceiling: 100;
 
 // Box-Shadow

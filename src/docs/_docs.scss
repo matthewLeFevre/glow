@@ -1,4 +1,6 @@
 .ln-display-case {
+  position: relative;
+  z-index: $ln-z-floor;
   display: block;
   padding: $ln-spacing-2;
   margin-top: $ln-spacing-3;

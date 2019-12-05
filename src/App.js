@@ -12,6 +12,7 @@ import GridView from "./docs/pages/GridView";
 import TitlesView from "./docs/pages/TitlesView";
 import CardView from "./docs/pages/CardView";
 import ButtonView from "./docs/pages/ButtonView";
+import NotificationView from "./docs/pages/NotificationView";
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
                   <DocNavLink to="/setup" text="Setup" />
                 </DocNavGroup>
                 <DocNavGroup title="Elements">
+                  <DocNavLink to="/notification" text="Notification" />
                   <DocNavLink to="/button" text="Button" />
                   <DocNavLink to="/card" text="Card" />
                   <DocNavLink to="/form" text="Form" />
@@ -45,6 +47,11 @@ function App() {
               <Route path="/" exact={true} component={Welcome} />
               <Route path="/setup" exact={true} component={Setup} />
               <Route path="/button" exact={true} component={ButtonView} />
+              <Route
+                path="/notification"
+                exact={true}
+                component={NotificationView}
+              />
               <Route path="/card" exact={true} component={CardView} />
               <Route path="/form" exact={true} component={FormView} />
               <Route path="/title" exact={true} component={TitlesView} />
