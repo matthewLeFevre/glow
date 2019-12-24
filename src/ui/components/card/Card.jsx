@@ -45,7 +45,13 @@ export function CardHeader({ children }) {
   return <header className="ln-card__head">{children}</header>;
 }
 
-export function CardMenuItem({ type, onClick, to, text, href }) {
+export function CardMenuItem({
+  type = "externalLink",
+  onClick,
+  to,
+  text,
+  href
+}) {
   return (
     <li className="ln-card-menu__item">
       {type === "externalLink" ? (

@@ -5,5 +5,10 @@
   box-shadow: $ln-bs-1;
   & > code.hljs {
     background-color: $ln-lightestgrey;
+    font-size: $ln-font-sml;
+  }
+  & .hljs-tag > .hljs-name {
+    font-weight: $ln-font-weight-2;
+    color: purple;
   }
 }

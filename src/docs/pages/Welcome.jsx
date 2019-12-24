@@ -1,6 +1,7 @@
 import React from "react";
-import { Title1 } from "../../ui/components/titles/Titles";
+import { Title1, Title2 } from "../../ui/components/titles/Titles";
 import { Paragraph } from "../../ui/components/bodyText/BodyText";
+import Button from "../../ui/components/buttons/Button";
 
 export default function Welcome() {
   return (

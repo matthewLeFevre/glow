@@ -1,10 +1,10 @@
 import React from "react";
 import { Title2 } from "../../ui/components/titles/Titles";
 
-export default function PropsTable({ compProps }) {
+export default function PropsTable({ component = "", compProps }) {
   return (
     <>
-      <Title2>Properties</Title2>
+      <Title2>{component} Properties</Title2>
       <table className="ln-props-table">
         <tr>
           <th>Name</th>
